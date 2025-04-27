@@ -19,7 +19,6 @@ import org.bukkit.block.sign.SignSide;
 import org.bukkit.command.Command;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.command.SimpleCommandMap;
-import org.bukkit.material.Crops;
 import org.bukkit.plugin.Plugin;
 
 import java.util.*;

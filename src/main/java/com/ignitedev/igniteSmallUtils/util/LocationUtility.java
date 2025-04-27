@@ -27,17 +27,17 @@ import java.util.concurrent.ThreadLocalRandom;
 public class LocationUtility {
 
   private final BlockFace[] axis = {
-    BlockFace.NORTH, BlockFace.EAST, BlockFace.SOUTH, BlockFace.WEST
+      BlockFace.NORTH, BlockFace.EAST, BlockFace.SOUTH, BlockFace.WEST
   };
   private final BlockFace[] radial = {
-    BlockFace.NORTH,
-    BlockFace.NORTH_EAST,
-    BlockFace.EAST,
-    BlockFace.SOUTH_EAST,
-    BlockFace.SOUTH,
-    BlockFace.SOUTH_WEST,
-    BlockFace.WEST,
-    BlockFace.NORTH_WEST
+      BlockFace.NORTH,
+      BlockFace.NORTH_EAST,
+      BlockFace.EAST,
+      BlockFace.SOUTH_EAST,
+      BlockFace.SOUTH,
+      BlockFace.SOUTH_WEST,
+      BlockFace.WEST,
+      BlockFace.NORTH_WEST
   };
 
   public double calculateDistance2D(Location firstLocation, Location secondLocation) {
@@ -333,10 +333,10 @@ public class LocationUtility {
 
   public static double distance(Location firstLocation, Location secondLocation) {
     return firstLocation == null
-            || secondLocation == null
-            || firstLocation.getWorld() == null
-            || secondLocation.getWorld() == null
-            || !firstLocation.getWorld().equals(secondLocation.getWorld())
+        || secondLocation == null
+        || firstLocation.getWorld() == null
+        || secondLocation.getWorld() == null
+        || !firstLocation.getWorld().equals(secondLocation.getWorld())
         ? -1.0D
         : firstLocation.distance(secondLocation);
   }

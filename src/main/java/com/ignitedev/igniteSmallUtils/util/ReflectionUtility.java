@@ -53,11 +53,11 @@ public class ReflectionUtility {
   public Object initializeObject(Class<?> clazz, Object... arguments) throws Exception {
 
     return getConstructor(
-            clazz,
-            Arrays.stream(arguments)
-                .filter(Objects::nonNull)
-                .map(Object::getClass)
-                .toArray(Class[]::new))
+        clazz,
+        Arrays.stream(arguments)
+            .filter(Objects::nonNull)
+            .map(Object::getClass)
+            .toArray(Class[]::new))
         .newInstance(arguments);
   }
 
@@ -107,12 +107,12 @@ public class ReflectionUtility {
       throws Exception {
 
     return getMethod(
-            instance.getClass(),
-            methodName,
-            Arrays.stream(arguments)
-                .filter(Objects::nonNull)
-                .map(Object::getClass)
-                .toArray(Class[]::new))
+        instance.getClass(),
+        methodName,
+        Arrays.stream(arguments)
+            .filter(Objects::nonNull)
+            .map(Object::getClass)
+            .toArray(Class[]::new))
         .invoke(instance, arguments);
   }
 
@@ -120,12 +120,12 @@ public class ReflectionUtility {
       Object instance, Class<?> clazz, String methodName, Object... arguments) throws Exception {
 
     return getMethod(
-            clazz,
-            methodName,
-            Arrays.stream(arguments)
-                .filter(Objects::nonNull)
-                .map(Object::getClass)
-                .toArray(Class[]::new))
+        clazz,
+        methodName,
+        Arrays.stream(arguments)
+            .filter(Objects::nonNull)
+            .map(Object::getClass)
+            .toArray(Class[]::new))
         .invoke(instance, arguments);
   }
 
@@ -263,7 +263,7 @@ public class ReflectionUtility {
 
   public static Object getPrivateField(Object object, String field)
       throws SecurityException, NoSuchFieldException, IllegalArgumentException,
-          IllegalAccessException {
+      IllegalAccessException {
     Class<?> clazz = object.getClass();
     Field objectField = clazz.getDeclaredField(field);
     objectField.setAccessible(true);

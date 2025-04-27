@@ -55,7 +55,7 @@ public class BlockVisualizerUtility {
     falling.setVelocity(new Vector(0, 0, 0));
     falling.setCustomNameVisible(true);
 
-    if(IgniteSmallUtils.isUsingPaper()) {
+    if (IgniteSmallUtils.isUsingPaper()) {
       falling.customName(TextUtility.colorizeToComponent(blockName));
     } else {
       falling.setCustomName(TextUtility.colorize(blockName));

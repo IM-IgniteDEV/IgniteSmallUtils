@@ -16,8 +16,12 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class Placeholder {
 
-  @Getter @Setter private IgniteComponent key;
-  @Getter @Setter private IgniteComponent value;
+  @Getter
+  @Setter
+  private IgniteComponent key;
+  @Getter
+  @Setter
+  private IgniteComponent value;
 
   public static Placeholder replacing(IgniteComponent key, IgniteComponent value) {
     return new Placeholder(key, value);

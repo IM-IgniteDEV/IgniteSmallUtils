@@ -164,7 +164,9 @@ public class IgniteComponent {
     }
   }
 
-  public interface ListStrings extends Supplier<List<String>> {}
+  public interface ListStrings extends Supplier<List<String>> {
+  }
 
-  public interface ListComponents extends Supplier<List<Component>> {}
+  public interface ListComponents extends Supplier<List<Component>> {
+  }
 }

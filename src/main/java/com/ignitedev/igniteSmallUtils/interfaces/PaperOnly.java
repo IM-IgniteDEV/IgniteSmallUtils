@@ -4,5 +4,8 @@
 
 package com.ignitedev.igniteSmallUtils.interfaces;
 
-/** This interface is used to mark classes only working on paper engine * */
-public @interface PaperOnly {}
+/**
+ * This interface is used to mark classes only working on paper engine *
+ */
+public @interface PaperOnly {
+}

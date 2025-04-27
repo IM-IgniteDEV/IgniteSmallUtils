@@ -82,8 +82,8 @@ public class MathUtility {
    * This will check if the number is between to given numbers
    *
    * @param input This is the number you want to check that is between the 2 values
-   * @param min This is the min value of the check
-   * @param max This is the max value of the check
+   * @param min   This is the min value of the check
+   * @param max   This is the max value of the check
    * @return boolean This returns if the number is between the 2 given values
    */
   public boolean isBetween(Integer input, Integer min, Integer max) {
@@ -103,7 +103,7 @@ public class MathUtility {
   /**
    * This will return the right plural
    *
-   * @param text This is the text you want to correct
+   * @param text  This is the text you want to correct
    * @param input This is the amount we use to check if more than one
    * @return String This returns the correct plural statement
    */
@@ -179,8 +179,8 @@ public class MathUtility {
    * range is returned.
    *
    * @param value the value which should be checked.
-   * @param max the maximum value.
-   * @param min the minimum value
+   * @param max   the maximum value.
+   * @param min   the minimum value
    * @return the calculated value.
    */
   public int getMaxOrMin(int value, int max, int min) {

@@ -14,7 +14,7 @@ import java.util.function.Predicate;
 
 /**
  * @implNote this utility is used to create lore of item, it is helpful if you are using information
- *     from item lore, then you depend on that class as well as on { {@link LoreReaderUtility}}
+ * from item lore, then you depend on that class as well as on { {@link LoreReaderUtility}}
  */
 @SuppressWarnings("unused")
 @EqualsAndHashCode
@@ -22,7 +22,8 @@ public class LoreBuilderUtility {
 
   private List<Component> lore = new ArrayList<>();
 
-  public LoreBuilderUtility() {}
+  public LoreBuilderUtility() {
+  }
 
   public LoreBuilderUtility(List<Component> list) {
     this.lore = list;
