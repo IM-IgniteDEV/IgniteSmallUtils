@@ -1,0 +1,7 @@
+name: IgniteSmallUtils
+version: '1.0.0'
+main: com.ignitedev.igniteSmallUtils.IgniteSmallUtils
+api-version: '1.21'
+authors: [ IgniteDEV ]
+description: Small independent utils
+website: https://github.com/IM-IgniteDEV
